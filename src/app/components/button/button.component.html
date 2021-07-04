@@ -1,0 +1,15 @@
+<div>
+    <p>
+        <mat-form-field appearance="outline">
+            <mat-label>Search...</mat-label>
+            <input matInput placeholder="Input a keyword">
+            <mat-icon matSuffix>search</mat-icon>
+        </mat-form-field>
+        <span [ngStyle]="{'background-color': color}" 
+            class="material-icons custom-filter" 
+            (click)="openFilterModal()"
+        >
+            filter_alt
+        </span>
+    </p>
+</div>

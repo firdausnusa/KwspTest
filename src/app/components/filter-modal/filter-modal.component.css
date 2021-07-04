@@ -1,0 +1,14 @@
+.list-section {
+    column-count: 2;
+}
+
+.custom-modal-header {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.custom-modal-button {
+    display: flex;
+    justify-content: space-between;
+}

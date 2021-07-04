@@ -1,0 +1,7 @@
+{
+    "/api/*": {
+        "target": "https://secure.kwsp.gov.my/m2/postBranchLocation",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}

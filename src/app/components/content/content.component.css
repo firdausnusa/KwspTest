@@ -1,0 +1,16 @@
+
+
+
+.custom-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 40px 20px 50px;
+}
+.custom-text {
+    font-weight: 400;
+    line-height: 1.125;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    letter-spacing: normal;
+}
+

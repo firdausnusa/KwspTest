@@ -1,0 +1,55 @@
+<div>
+  <span class="custom-box">
+    <div class="custom-text">
+      <h4>Locator</h4>
+      <h6>List of Offices</h6>
+    </div>
+
+    <div>
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Search...</mat-label>
+          <input matInput placeholder="Input a keyword" [(ngModel)]="searchModel" (ngModelChange)="filter()">
+          <mat-icon matSuffix>search</mat-icon>
+        </mat-form-field>
+        <span [ngStyle]="{'background-color': color}" class="material-icons custom-filter" (click)="openFilterModal()">
+          filter_alt
+        </span>
+      </p>
+    </div>
+  </span>
+</div>
+<div class="mat-elevation-z8">
+  <table mat-table class="full-width-table" matSort aria-label="Elements">
+    <!-- Id Column -->
+    <ng-container matColumnDef="key">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header class="cstm-table-header">NO</th>
+      <td mat-cell *matCellDef="let row" class="cstm-column">{{row.key}}</td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="nam">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header class="cstm-table-header">NAME</th>
+      <td mat-cell *matCellDef="let row" class="cstm-column" (click)="openLocation(row)"><a href="javascript:void(0);">{{row.nam}}</a></td>
+    </ng-container>
+
+    <!-- Address Column -->
+    <ng-container matColumnDef="ads">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header class="cstm-table-header">ADDRESS</th>
+      <td mat-cell *matCellDef="let row" class="cstm-column">{{row.ads}}</td>
+    </ng-container>
+
+    <!-- Distance Column -->
+    <ng-container matColumnDef="dis">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header class="cstm-table-header">Distance(KM)</th>
+      <td mat-cell *matCellDef="let row" class="cstm-column">{{ getDistance(row) }}</td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
+  <mat-paginator #paginator [length]="dataSource?.data?.length" [pageIndex]="0" [pageSize]="10"
+    [pageSizeOptions]="[5, 10, 20]" class="cstm-column">
+  </mat-paginator>
+</div>

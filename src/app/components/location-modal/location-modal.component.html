@@ -1,0 +1,59 @@
+<!-- <p>{{data.locations}}</p> -->
+<div>
+    <span class="custom-modal-header">
+    <h1>Location Details</h1>
+    <span mat-dialog-close class="material-icons"> close </span>
+    </span>
+    <span>
+    <h4>Map</h4>
+    <div class="custom-map">
+        <agm-map [latitude]="lat" [longitude]="lng">
+            <agm-marker
+                *ngFor="let coordinate of coordinates; let i = index"
+                [latitude]="coordinate.lat"
+                [longitude]="coordinate.lng">
+            </agm-marker>
+            <agm-polyline [visible]="true" [strokeWeight]="3">
+                <agm-polyline-point
+                    *ngFor="let coordinate of coordinates; let i = index"
+                    [latitude]="coordinate.lat"
+                    [longitude]="coordinate.lng">
+                </agm-polyline-point>
+            </agm-polyline>
+        </agm-map>
+    </div>
+
+    <h3 style="padding-top: 30px;">Information</h3>
+
+    <table>
+        <tbody>
+        <tr>
+            <td class="custom-table">Address</td>
+            <td>{{ locationData.ads }}</td>
+        </tr>
+        <tr>
+            <td class="custom-table">Distance from your Location</td>
+            <td>{{ getDistance(locationData) }} KM</td>
+        </tr>
+        <tr>
+            <td class="custom-table">Fax No.</td>
+            <td>{{ locationData.fax }}</td>
+        </tr>
+        <tr>
+            <td class="custom-table">Operation Hours</td>
+            <td>
+                <div><strong>Pejabat</strong></div>
+                <div>Isnin - Jumaat: 8.00AM - 5.00PM</div>
+                <div><strong>Kaunter</strong></div>
+                <div>Isnin - Jumaat: 8.30AM - 4.30PM</div>
+                <div>Rehat Jumaat: 12.15PM - 2.45PM</div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    </span>
+    <div class="button-container">
+        <button (click)="openInMap()">Open In Maps</button>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<!-- <p>{{data.locations}}</p> -->
+<div>
+    <span class="custom-modal-header">
+        <h4>Filter</h4>
+        <span mat-dialog-close class="material-icons">
+            close
+        </span>
+    </span>
+    <span style="padding-bottom: 10px;" class="custom-modal-button">
+        <mat-checkbox [disabled]="false" (click)="checkAll()" [(ngModel)]="selectedAll" [checked]="selectedAll">All</mat-checkbox>
+        <div>
+            <button mat-flat-button style="margin-right: 10px ;" (click)="resetFilterModal()">Reset</button>
+            <button mat-flat-button color="primary" (click)="closeFilterModal()" [mat-dialog-close]="test">Apply</button>
+        </div>
+    </span>
+    <mat-divider></mat-divider>
+    <span>
+        <ul class="list-section" style="list-style-type:none;">
+          <li *ngFor="let sublocation of data.allLocation">
+        
+            <mat-checkbox [disabled]="false" [checked]="getChecked(sublocation)" (click)="updateSelected(sublocation)">{{sublocation}}</mat-checkbox>
+        </li>
+        </ul>
+    </span>
+</div>

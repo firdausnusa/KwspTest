@@ -1,0 +1,145 @@
+[
+    { 
+        "id": 1, 
+        "name": "Hydrogen", 
+        "address": "", 
+        "distance": 1, 
+        "location": {
+            "latitude": 12345,
+            "longitude": 12345
+        }
+    },
+    { 
+        "id": 2, 
+        "name": "Helium", 
+        "address": "", 
+        "distance": 2, 
+        "location": {}
+    },
+    {   
+        "id": 3, 
+        "name": "Lithium", 
+        "address": "", 
+        "distance": 3, 
+        "location": {}
+    },
+    {
+        "id": 4, 
+        "name": "Beryllium", 
+        "address": "", 
+        "distance": 4, 
+        "location": {}
+    },
+    {
+        "id": 5, 
+        "name": "Boron", 
+        "address": "", 
+        "distance": 5, 
+        "location": {}
+    },
+    {
+        "id": 6, 
+        "name": "Carbon", 
+        "address": "", 
+        "distance": 6, 
+        "location": {}
+    },
+    {
+        "id": 7, 
+        "name": "Nitrogen", 
+        "address": "", 
+        "distance": 13, 
+        "location": {}
+    },
+    {
+        "id": 8, 
+        "name": "Oxygen", 
+        "address": "", 
+        "distance": 14, 
+        "location": {}
+    },
+    {
+        "id": 9, 
+        "name": "Fluorine", 
+        "address": "", 
+        "distance": 15, 
+        "location": {}
+    },
+    {
+        "id": 10, 
+        "name": "Neon", 
+        "address": "", 
+        "distance": 16, 
+        "location": {}
+    },
+    {
+        "id": 11, 
+        "name": "Sodium", 
+        "address": "", 
+        "distance": 17, 
+        "location": {}
+    },
+    {
+        "id": 12, 
+        "name": "Magnesium", 
+        "address": "", 
+        "distance": 18, 
+        "location": {}
+    },
+    {
+        "id": 13, 
+        "name": "Aluminum", 
+        "address": "", 
+        "distance": 19, 
+        "location": {}
+    },
+    {
+        "id": 14, 
+        "name": "Silicon", 
+        "address": "", 
+        "distance": 20, 
+        "location": {}
+    },
+    {
+        "id": 15, 
+        "name": "Phosphorus", 
+        "address": "", 
+        "distance": 12, 
+        "location": {}
+    },
+    {
+        "id": 16, 
+        "name": "Sulfur", 
+        "address": "", 
+        "distance": 11, 
+        "location": {}
+    },
+    {
+        "id": 17, 
+        "name": "Chlorine", 
+        "address": "", 
+        "distance": 10, 
+        "location": {}
+    },
+    {
+        "id": 18, 
+        "name": "Argon", 
+        "address": "", 
+        "distance": 9, 
+        "location": {}
+    },
+    {
+        "id": 19, 
+        "name": "Potassium", 
+        "address": "", 
+        "distance": 8, 
+        "location": {}
+    },
+    {
+        "id": 20, 
+        "name": "Calcium", 
+        "address": "", 
+        "distance": 7, 
+        "location": {}
+    }
+]

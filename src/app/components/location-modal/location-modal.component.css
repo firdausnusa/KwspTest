@@ -1,0 +1,36 @@
+.list-section {
+    column-count: 2;
+}
+
+.custom-modal-header {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.custom-modal-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+agm-map {
+  height: 350px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.custom-table {
+    padding-right: 100px;
+}
+
+.button-container {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
