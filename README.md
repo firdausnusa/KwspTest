@@ -25,3 +25,9 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Issues regarding the api 
+
+Ived encounter issue on CORS origin during development in order to fetch all the locations data thru the browsers. I also tried to include cross origin permission in the header and also proxy the request but seems no luck. And since the data is able to be retrieved using the Postman App. I took the initiative to take all the data from postman and 'mock' inside a file to be used inside web app. 
+
+Thanks, Hope to hear from you soon ;>.
